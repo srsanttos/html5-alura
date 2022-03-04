@@ -32,7 +32,10 @@ nav a:hover{
     color: yellow;
     text-decoration: underline;
 }
-
+body{
+    font-family: 'Montserrat', sans-serif;
+ 
+}
 .produtos{
     width: 940px;
     margin: 0 auto;
@@ -90,8 +93,7 @@ footer{
 }
 
 main{
-    width: 940px;
-    margin: 0 auto;
+
 }
 
 form{
@@ -155,7 +157,124 @@ td, th{
     padding: 3px;
 
 }
+/* CSS da página inicial */
+.banner {
+    width: 100%;
+
+}
+
+.tituloprincipal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.tituloprincipal:first-letter {
+    font-weight: bold;
+}
+
+.itens:before {
+    content: "✫";   
+
+}
 
 
+.principal {
+    padding: 3em 0;
+    background: white;
+    width: 940px;
+    margin: 0 auto;
+
+}
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal strong{
+font-weight: bold;
+}
+.principal em{
+    font-style: italic;
+    }
+
+.beneficios{
+    background: gray;
+    padding: 3em 0;
+
+}
+.itens{
+    line-height: 1.5;
+}
+.itens:nth-child(1){
+    font-weight: bold;
+}
+
+.imgbeneficios {
+    width: 60%;
+    opacity: 0.7;
+    transition: all 400ms;
+    box-shadow: 10px 10px 5px black;
+}
+.imgbeneficios:hover {
+    width: 60%;
+    opacity: 1;
+}
 
 
+.conteudobeneficios{
+    width: 640px;
+    margin: 0 auto;
+
+}
+
+.listabeneficios{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.utensilios{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+
+.mapa{
+    padding: 3em;
+    background: linear-gradient(white, gray);
+    margin: 0 auto;
+
+}
+.mapaconteudo{
+    width: 940px;
+    margin: 0 auto;
+}
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+.video{
+    width: 560px;
+    height: auto;
+    margin: 1em auto;
+}
+
+@media screen and (max-width: 480px)   {
+    .caixa, .principal, .conteudobeneficios, .mapaconteudo, .video, .produtos, .produtos li{
+        width: auto;
+    }
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .listabeneficios, .imgbeneficios{
+        width: 100%;
+    }
+    
+}
